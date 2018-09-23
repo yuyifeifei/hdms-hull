@@ -44,8 +44,8 @@ public class APIResponse {
     public static APIResponse ok(){
         return new APIResponse(ResultEnum.SUCCESS,null);
     }
-    public static APIResponse isNotOk(Object data){
-        return new APIResponse(ResultEnum.FAIL, data);
+    public static APIResponse isNotOk(String message){
+        return new APIResponse(ResultEnum.FAIL, message);
     }
     public static APIResponse isNotOk(){
         return new APIResponse(ResultEnum.FAIL, null);
